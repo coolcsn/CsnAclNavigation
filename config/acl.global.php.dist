@@ -1,0 +1,24 @@
+<?php
+return array(
+    'acl' => array(
+        'roles' => array(
+            'guest'   => null,
+            'member'  => 'guest',
+            'admin'  => 'member',
+        ),
+        'resources' => array(
+            'allow' => array(
+				'CsnUser\Controller\Registration' => array(
+					'index'	=> 'guest',
+					'forgotten-password' => 'member',
+				),
+				'CsnUser\Controller\Index' => array(
+					'login'   => 'guest',
+				),
+				'Zend' => array(
+					'uri'   => 'member'
+				),
+            )
+        )
+    )
+);

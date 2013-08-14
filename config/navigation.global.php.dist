@@ -1,0 +1,48 @@
+<?php
+
+return array(
+     'navigation' => array(
+         'default' => array(
+             array(
+                 'label' => 'Home',
+                 'route' => 'home',
+             ),
+			 array(
+                 'label' => 'Login',
+                 'route' => 'login', 
+				 'controller' => 'Index',
+				 'action'     => 'login',
+				 'resource'	  => 'CsnUser\Controller\Index',
+				 'privilege'  => 'login',
+             ),
+             array(
+                 'label' => 'Registration',
+                 'route' => 'registration', 
+				 'controller' => 'Registration',
+				 'action'     => 'index',
+				 'resource'	  => 'CsnUser\Controller\Registration',
+				 'privilege'  => 'index',
+				 'title'	  => 'Registration Form'
+             ),
+             array(
+                 'label' => 'Forgotten Password',
+                 'route' => 'forgotten-password', 
+				 'controller' => 'Registration',
+				 'action'     => 'forgotten-password',
+				 'resource'	  => 'CsnUser\Controller\Registration',
+				 'privilege'  => 'forgotten-password'
+             ),
+			array(
+				'label' => 'Zend',
+				'uri'   => 'http://framework.zend.com/',
+				'resource' => 'Zend',
+				'privilege'	=>	'uri'
+			),
+		),
+     ),
+     'service_manager' => array(
+         'factories' => array(
+             'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
+         ),
+     ),
+);

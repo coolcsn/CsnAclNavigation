@@ -1,0 +1,36 @@
+{
+    "name":         "coolcsn/csn-aclnavigation",
+    "description":  "Zend Framework 2 Module for Navigation using Acl",
+    "type":         "library",
+    "license":      "BSD-3-Clause",
+    "homepage":     "https://github.com/coolcsn/CsnAclNavigation",
+    "keywords": [
+        "zf2",
+        "csn-aclnavigation"
+    ],
+    "authors": [
+        {
+            "name":      "Stoyan Cheresharov",
+            "email":     "stoyancheresharov@gmail.com",
+            "homepage":  "http://coolcsn.com/",
+            "role":      "Developer"
+        },
+		
+		{
+            "name":      "Anton Tonev",
+            "email":     "atonevbg@gmail.com",
+            "role":      "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/doctrine-orm-module": ">=0.7",
+        "coolcsn/csn-user": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "CsnAclNavigation\\": "src/"
+        }
+    }
+}
