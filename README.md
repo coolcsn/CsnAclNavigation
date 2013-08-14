@@ -60,7 +60,8 @@ If we have a link in our navigation to resource named "Album\Controller\Album" a
 
 For example:
 
-``` array(
+```
+	array(
                  'label' => 'Album', // 'Page #1',
                  'route' => 'album', // 'page-1',
 				 'action'     => 'index',
@@ -76,7 +77,8 @@ For example:
 						 'privilege'	=> 'add',
                      ),
                  ),
-             ),```
+             ),
+```
 
 Show navigation
 =============
