@@ -33,6 +33,7 @@ After adding to the composer's packagist.org (not ready yet)
     "coolcsn/csn-aclnavigation": "dev-master"
 }
 ```
+Run ```php composer.phar update```
 
 Go to your application configuration in ```./config/application.config.php```and add 'CsnAclNavigation'.
 An example application configuration could look like the following:
