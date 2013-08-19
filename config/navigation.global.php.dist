@@ -32,6 +32,22 @@ return array(
 				 'resource'	  => 'CsnUser\Controller\Registration',
 				 'privilege'  => 'forgotten-password'
              ),
+             array(
+                 'label' => 'Change Password',
+                 'route' => 'changePassword', 
+				 'controller' => 'Registration',
+				 'action'     => 'change-password',
+				 'resource'	  => 'CsnUser\Controller\Registration',
+				 'privilege'  => 'changePassword'
+             ),
+             array(
+                 'label' => 'Logout',
+                 'route' => 'logout', 
+				 'controller' => 'Index',
+				 'action'     => 'logout',
+				 'resource'	  => 'CsnUser\Controller\Index',
+				 'privilege'  => 'logout'
+             ),
 			array(
 				'label' => 'Zend',
 				'uri'   => 'http://framework.zend.com/',

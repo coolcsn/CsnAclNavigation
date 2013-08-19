@@ -10,10 +10,12 @@ return array(
             'allow' => array(
 				'CsnUser\Controller\Registration' => array(
 					'index'	=> 'guest',
-					'forgotten-password' => 'member',
+					'forgotten-password' => 'guest',
+					'changePassword' => 'member',
 				),
 				'CsnUser\Controller\Index' => array(
 					'login'   => 'guest',
+					'logout'  => 'member',
 				),
 				'Zend' => array(
 					'uri'   => 'member'
