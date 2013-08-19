@@ -86,7 +86,7 @@ Show navigation
 
 Add this somewhere in your layout / view script(located somewhere in ```./module```:
 ```
-<?php echo $this->navigation('navigation')->menu(); ?>
+<?php echo $this->navigation('navigation')->menu()->setUlClass('nav'); ?>
 ```
 
 Dependencies
