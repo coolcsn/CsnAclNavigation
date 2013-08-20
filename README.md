@@ -50,10 +50,9 @@ An example application configuration could look like the following:
 
 Configuration
 =============
+1. Copy the sample Navigation configuration from `./vendor/coolcsn/csn-aclnavigation/config/navigation.global.php.dist`. to `./config/autoload` renaming it to **navigation.global.php** and edit.
 
-1. Navigation configuration example is located in `./vendor/coolcsn/csn-aclnavigation/config/navigation.global.php.dist`. Move it to `./config/autoload/navigation.global.php` and edit.
-
-2. Acl configuration example is located in `./vendor/coolcsn/csn-aclnavigation/config/acl.global.php.dist` Move it to `./config/autoload/acl.global.php` and edit.
+2. Copy the sample Acl configuration from `./vendor/coolcsn/csn-aclnavigation/config/acl.global.php.dist` to `./config/autoload` renaming it to **acl.global.php** and edit.
 
 We recommend using the same names for the resources and privileges of the pages as for the controllers and actions. This is done to keep the Navigation and Authorization in sync.
 
@@ -84,9 +83,9 @@ For example:
 Show navigation
 =============
 
-Add this somewhere in your layout / view script(located somewhere in ```./module```:
+Add this somewhere in your layout `./module/Application/view/layout/layout.phtml` :
 ```
-<?php echo $this->navigation('navigation')->menu()->setUlClass('nav'); ?>
+<?php echo $this->navigation('navigation')->menu(); ?>
 ```
 
 Dependencies

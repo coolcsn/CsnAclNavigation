@@ -10,12 +10,18 @@ return array(
             'allow' => array(
 				'CsnUser\Controller\Registration' => array(
 					'index'	=> 'guest',
-					'forgotten-password' => 'guest',
 					'changePassword' => 'member',
+					'editProfile' => 'member',
+					'changeEmail' => 'member',
+					'forgottenPassword' => 'guest',
 				),
 				'CsnUser\Controller\Index' => array(
 					'login'   => 'guest',
 					'logout'  => 'member',
+					'index' => 'member',
+				),
+				'Application\Controller\Index' => array(
+					'index'   => 'guest',
 				),
 				'Zend' => array(
 					'uri'   => 'member'

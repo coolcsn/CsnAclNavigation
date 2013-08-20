@@ -6,6 +6,8 @@ return array(
              array(
                  'label' => 'Home',
                  'route' => 'home',
+				 'resource' => 'Application\Controller\Index',
+				 'privilege' => 'index',
              ),
 			 array(
                  'label' => 'Login',
@@ -14,6 +16,14 @@ return array(
 				 'action'     => 'login',
 				 'resource'	  => 'CsnUser\Controller\Index',
 				 'privilege'  => 'login',
+             ),
+			 array(
+                 'label' => 'User',
+                 'route' => 'user', 
+				 'controller' => 'Index',
+				 'action'     => 'index',
+				 'resource'	  => 'CsnUser\Controller\Index',
+				 'privilege'  => 'index',
              ),
              array(
                  'label' => 'Registration',
@@ -25,21 +35,19 @@ return array(
 				 'title'	  => 'Registration Form'
              ),
              array(
-                 'label' => 'Forgotten Password',
-                 'route' => 'forgotten-password', 
+                 'label' => 'Edit profile',
+                 'route' => 'editProfile', 
 				 'controller' => 'Registration',
-				 'action'     => 'forgotten-password',
+				 'action'     => 'editProfile',
 				 'resource'	  => 'CsnUser\Controller\Registration',
-				 'privilege'  => 'forgotten-password'
+				 'privilege'  => 'editProfile',
              ),
-             array(
-                 'label' => 'Change Password',
-                 'route' => 'changePassword', 
-				 'controller' => 'Registration',
-				 'action'     => 'change-password',
-				 'resource'	  => 'CsnUser\Controller\Registration',
-				 'privilege'  => 'changePassword'
-             ),
+			array(
+				'label' => 'Zend',
+				'uri'   => 'http://framework.zend.com/',
+				'resource' => 'Zend',
+				'privilege'	=>	'uri'
+			),
              array(
                  'label' => 'Logout',
                  'route' => 'logout', 
@@ -48,14 +56,8 @@ return array(
 				 'resource'	  => 'CsnUser\Controller\Index',
 				 'privilege'  => 'logout'
              ),
-			array(
-				'label' => 'Zend',
-				'uri'   => 'http://framework.zend.com/',
-				'resource' => 'Zend',
-				'privilege'	=>	'uri'
-			),
-		),
-     ),
+		 ),
+	 ),
      'service_manager' => array(
          'factories' => array(
              'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
