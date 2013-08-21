@@ -1,12 +1,12 @@
 {
-    "name":         "coolcsn/csn-aclnavigation",
+    "name":         "coolcsn/csn-acl-navigation",
     "description":  "Zend Framework 2 Module for Navigation using Acl",
     "type":         "library",
     "license":      "BSD-3-Clause",
     "homepage":     "https://github.com/coolcsn/CsnAclNavigation",
     "keywords": [
         "zf2",
-        "csn-aclnavigation"
+        "csn-acl-navigation"
     ],
     "authors": [
         {

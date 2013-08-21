@@ -22,7 +22,7 @@ Installation via composer is supported, simply add the following line to your ``
 	}
 ],
 "require" : {
-    "coolcsn/csn-aclnavigation": "dev-master"
+    "coolcsn/csn-acl-navigation": "dev-master"
 }
 ```
 
@@ -30,7 +30,7 @@ After adding to the composer's packagist.org (not ready yet)
 
 ```
 "require" : {
-    "coolcsn/csn-aclnavigation": "dev-master"
+    "coolcsn/csn-acl-navigation": "dev-master"
 }
 ```
 Run ```php composer.phar update```
@@ -50,9 +50,9 @@ An example application configuration could look like the following:
 
 Configuration
 =============
-1. Copy the sample Navigation configuration from `./vendor/coolcsn/csn-aclnavigation/config/navigation.global.php.dist`. to `./config/autoload` renaming it to **navigation.global.php** and edit.
+1. Copy the sample Navigation configuration from `./vendor/coolcsn/csn-acl-navigation/config/navigation.global.php.dist`. to `./config/autoload` renaming it to **navigation.global.php** and edit.
 
-2. Copy the sample Acl configuration from `./vendor/coolcsn/csn-aclnavigation/config/acl.global.php.dist` to `./config/autoload` renaming it to **acl.global.php** and edit.
+2. Copy the sample Acl configuration from `./vendor/coolcsn/csn-acl-navigation/config/acl.global.php.dist` to `./config/autoload` renaming it to **acl.global.php** and edit.
 
 We recommend using the same names for the resources and privileges of the pages as for the controllers and actions. This is done to keep the Navigation and Authorization in sync.
 
