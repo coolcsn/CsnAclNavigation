@@ -18,13 +18,47 @@ return array(
 				'CsnUser\Controller\Index' => array(
 					'login'   => 'guest',
 					'logout'  => 'member',
-					'index' => 'member',
+					'index' => 'guest',
+				),
+                                'CsnCms\Controller\Index' => array(
+                                        'all' => 'guest'
+                                ),
+                                'CsnCms\Controller\Article' => array(
+					'view'	=> 'guest',
+					'index' => 'admin',
+					'add'	=> 'admin',
+					'edit'  => 'admin',	
+					'delete'=> 'admin',						
+				),
+				'CsnCms\Controller\Translation' => array(
+					'view'	=> 'guest',
+					'index' => 'admin',
+					'add'	=> 'admin',
+					'edit'  => 'admin',	
+					'delete'=> 'admin',						
+				),
+				'CsnCms\Controller\Comment' => array(
+					'view'	=> 'guest',
+					'index' => 'admin',
+					'add'	=> 'admin',
+					'edit'  => 'admin',	
+					'delete'=> 'admin',						
+				),
+				'Zend' => array(
+					'uri'   => 'member'
 				),
 				'Application\Controller\Index' => array(
 					'index'   => 'guest',
 				),
-				'Zend' => array(
-					'uri'   => 'member'
+				// for CMS articles
+				'Public Resource' => array(
+					'view'	=> 'guest',					
+				),
+				'Private Resource' => array(
+					'view'	=> 'member',					
+				),
+				'Admin Resource' => array(
+					'view'	=> 'admin',					
 				),
             )
         )
