@@ -12,28 +12,8 @@ CsnAclNavigation has been created with educational purposes to demonstrate how N
 Installation
 ============
 
-Installation via composer is supported, simply add the following line to your ```composer.json```
-
-```
-"repositories": [
-	{
-		"type": "vcs",
-		"url": "https://github.com/coolcsn/CsnAclNavigation"
-	}
-],
-"require" : {
-    "coolcsn/csn-acl-navigation": "dev-master"
-}
-```
-
-After adding to the composer's packagist.org (not ready yet)
-
-```
-"require" : {
-    "coolcsn/csn-acl-navigation": "dev-master"
-}
-```
-Run ```php composer.phar update```
+- Installation via composer is supported, simply run (make sure you've set `"minimum-stability": "dev"` in your *composer.json* file):
+`php composer.phar require coolcsn/csn-acl-navigation:dev-master`
 
 Go to your application configuration in ```./config/application.config.php```and add 'CsnAclNavigation'.
 An example application configuration could look like the following:

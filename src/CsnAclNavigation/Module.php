@@ -40,9 +40,8 @@ class Module
 					$role = \CsnAclNavigation\Acl\Acl::DEFAULT_ROLE; // The default role is guest $acl
 
 					if ($auth->hasIdentity()) {
-						$user = $auth->getIdentity();
-						$roleObject = $user->getRole(); 
-						$role = $roleObject->getName();
+						$user = $auth->getIdentity();	
+						$role = $user->getRole()->getName();
 					}				
 
                     // Get an instance of the proxy helper
