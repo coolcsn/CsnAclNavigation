@@ -21,7 +21,7 @@ An example application configuration could look like the following:
 ```
 'modules' => array(
     'Application',
-	'DoctrineModule',
+    'DoctrineModule',
     'DoctrineORMModule',
     'CsnUser',
     'CsnAclNavigation',
@@ -61,23 +61,27 @@ For example:
 ```
 
 Show navigation
-=============
+===============
 
 Add this somewhere in your layout `./module/Application/view/layout/layout.phtml` :
 ```
 <?php echo $this->navigation('navigation')->menu(); ?>
 ```
 
+If you are you sing *Bootstrap* (as the default skeleton application does), you may as well use:
+```
+<?php echo $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav'); ?>
+```
+
 Dependencies
-==========
+============
 
 This Module depends on the following Modules:
 
- - [CsnUser] (https://github.com/coolcsn/CsnUser)
+ - [CsnUser](https://github.com/coolcsn/CsnUser)
 
 Recommends
 ==========
 
-- [coolcsn/CsnAuthorization](https://github.com/coolcsn/CsnAuthorization) - Authorization compatible for this Registration and Logging.
-
+- [CsnAuhorization](https://github.com/coolcsn/CsnAuthorization) - An authorization system, using ACL.
 - [coolcsn/CsnCms](https://github.com/coolcsn/CsnCms) - Content management system;
