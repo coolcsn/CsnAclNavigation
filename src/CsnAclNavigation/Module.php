@@ -34,10 +34,10 @@ class Module
 					$sm = $pm->getServiceLocator();
 					$config = $sm->get('Config');
 
-					$acl = new \CsnAclNavigation\Acl\Acl($config);
+					$acl = new \CsnAuthorization\Acl\Acl($config);
 
 					$auth = $sm->get('Zend\Authentication\AuthenticationService');
-					$role = \CsnAclNavigation\Acl\Acl::DEFAULT_ROLE; // The default role is guest $acl
+					$role = \CsnAuthorization\Acl\Acl::DEFAULT_ROLE; // The default role is guest $acl
 
 					if ($auth->hasIdentity()) {
 						$user = $auth->getIdentity();	

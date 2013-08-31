@@ -26,7 +26,8 @@
     "require": {
         "php": ">=5.3.3",
         "doctrine/doctrine-orm-module": ">=0.7",
-        "coolcsn/csn-user": "dev-master"
+        "coolcsn/csn-user": "dev-master",
+		"coolcsn/csn-authorization: dev-master"
     },
     "autoload": {
         "psr-0": {

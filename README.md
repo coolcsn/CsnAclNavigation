@@ -24,15 +24,14 @@ An example application configuration could look like the following:
     'DoctrineModule',
     'DoctrineORMModule',
     'CsnUser',
-    'CsnAclNavigation',
+	'CsnAuthorization',
+    'CsnAclNavigation'
 )
 ```
 
 Configuration
 =============
 1. Copy the sample Navigation configuration from `./vendor/coolcsn/csn-acl-navigation/config/navigation.global.php.dist`. to `./config/autoload` renaming it to **navigation.global.php** and edit.
-
-2. Copy the sample Acl configuration from `./vendor/coolcsn/csn-acl-navigation/config/acl.global.php.dist` to `./config/autoload` renaming it to **acl.global.php** and edit.
 
 We recommend using the same names for the resources and privileges of the pages as for the controllers and actions. This is done to keep the Navigation and Authorization in sync.
 
@@ -79,6 +78,7 @@ Dependencies
 This Module depends on the following Modules:
 
  - [CsnUser](https://github.com/coolcsn/CsnUser)
+ - [CsnAuthorization](https://github.com/coolcsn/CsnAuthorization)
 
 Recommends
 ==========
