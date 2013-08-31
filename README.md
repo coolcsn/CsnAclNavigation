@@ -15,7 +15,7 @@ Installation
 1. Installation via composer is supported, simply run (make sure you've set `"minimum-stability": "dev"` in your *composer.json* file):
 `php composer.phar require coolcsn/csn-acl-navigation:dev-master`
 
-2. 2. Configure referenced modules ([CsnUser](https://github.com/coolcsn/CsnUser) and [CsnAuthorization](https://github.com/coolcsn/CsnAuthorization)) following their instructions.
+2. Configure referenced modules ([CsnUser](https://github.com/coolcsn/CsnUser) and [CsnAuthorization](https://github.com/coolcsn/CsnAuthorization)) following their instructions.
 
 Go to your application configuration in ```./config/application.config.php```and add 'CsnAclNavigation'.
 An example application configuration could look like the following:
@@ -81,6 +81,7 @@ This Module depends on the following Modules:
 
  - [CsnUser](https://github.com/coolcsn/CsnUser)
  - [CsnAuthorization](https://github.com/coolcsn/CsnAuthorization)
+ 
 Recommends
 ==========
 
