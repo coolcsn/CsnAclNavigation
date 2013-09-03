@@ -10,12 +10,11 @@
     ],
     "authors": [
         {
-			"name":      "Stoyan Cheresharov",
+            "name":      "Stoyan Cheresharov",
             "email":     "stoyancheresharov@gmail.com",
             "homepage":  "http://coolcsn.com/",
             "role":      "Developer"
         },
-		
 		{
             "name":      "Anton Tonev",
             "email":     "atonevbg@gmail.com",
@@ -26,12 +25,11 @@
     "require": {
         "php": ">=5.3.3",
         "doctrine/doctrine-orm-module": ">=0.7",
-        "coolcsn/csn-user": "dev-master",
-		"coolcsn/csn-authorization": "dev-master"
+        "coolcsn/csn-user": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "CsnAclNavigation\\": "src/"
+			"CsnAclNavigation\\": "src/"
         }
     }
 }
