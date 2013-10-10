@@ -42,7 +42,7 @@ class Module
 					$sm = $pm->getServiceLocator();
 					$config = $sm->get('Config');
 
-					$acl = new \CsnAuthorization\Acl\Acl($config);
+					$acl = $sm->get('acl');
 
 					$auth = $sm->get('Zend\Authentication\AuthenticationService');
 					$role = \CsnAuthorization\Acl\Acl::DEFAULT_ROLE; // The default role is guest $acl
