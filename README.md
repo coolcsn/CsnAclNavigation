@@ -69,7 +69,7 @@ Add this somewhere in your layout `./module/Application/view/layout/layout.phtml
 <?php echo $this->navigation('navigation')->menu(); ?>
 ```
 
-If you are you sing *Bootstrap* (as the default skeleton application does), you may as well use:
+If you are you using *Bootstrap* (as the default skeleton application does), you may as well use:
 ```
 <?php echo $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav'); ?>
 ```
